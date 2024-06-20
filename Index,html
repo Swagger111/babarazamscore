@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Team and Score</title>
+    <script>
+        function changeTeamAndScore() {
+            let text = document.getElementById('teamScore').innerText;
+            text = text.replace('Zimbabwe', 'Australia');
+            text = text.replace('0', '100');
+            document.getElementById('teamScore').innerText = text;
+        }
+    </script>
+</head>
+<body>
+    <p id="teamScore">Team = Zimbabwe = Babar Score = 0</p>
+    <button onclick="changeTeamAndScore()">Change Team and Score</button>
+</body>
+</html>
